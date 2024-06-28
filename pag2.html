@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Conversor de Temperatura</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center align-items-center vh-100">
+            <div class="col-md-6">
+                <header class="mb-4">
+                    <h1 class="text-center">Conversor de Temperatura</h1>
+                    <nav class="text-center">
+                        <a href="#" class="btn btn-link btn-link-index">Calculadora</a>
+                    </nav>
+                </header>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="celsius">Celsius</label>
+                            <input type="number" id="celsius" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="fahrenheit">Fahrenheit</label>
+                            <input type="number" id="fahrenheit" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="kelvin">Kelvin</label>
+                            <input type="number" id="kelvin" class="form-control">
+                        </div>
+                        <div class="button-container mb-3">
+                            <button class="btn btn-primary" onclick="converterTemperatura()">Converter</button>
+                            <button class="btn btn-secondary" onclick="limparCampos()">Limpar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.querySelector('.btn-link-index').addEventListener('click', function() {
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center align-items-center vh-100">
+            <div class="col-md-6"> <!-- aumentar largura da coluna -->
+                <header class="mb-4">
+                    <h1 class="text-center">Calculadora</h1>
+                    <nav class="text-center">
+                        <a href="#" class="btn btn-link btn-link-pag2">Conversor de Temperaturas</a>
+                    </nav>
+                </header>
+                <div class="calculator card">
+                    <div class="card-body">
+                        <input type="text" id="resultado" class="form-control mb-3" readonly>
+                        <div class="button-container mb-3">
+                            <button class="btn btn-secondary" onclick="limparResultado()">C</button>
+                            <button class="btn btn-secondary" onclick="adicionarOperador('-')">-</button>
+                            <button class="btn btn-secondary" onclick="adicionarOperador('+')">+</button>
+                            <button class="btn btn-secondary" onclick="adicionarNumero(7)">7</button>
+                            <button class="btn btn-secondary" onclick="adicionarNumero(8)">8</button>
+                            <button class="btn btn-secondary" onclick="adicionarNumero(9)">9</button>
+                            <button class="btn btn-secondary" onclick="adicionarNumero(4)">4</button>
+                            <button class="btn btn-secondary" onclick="adicionarNumero(5)">5</button>
+                            <button class="btn btn-secondary" onclick="adicionarNumero(6)">6</button>
+                            <button class="btn btn-secondary" onclick="adicionarNumero(1)">1</button>
+                            <button class="btn btn-secondary" onclick="adicionarNumero(2)">2</button>
+                            <button class="btn btn-secondary" onclick="adicionarNumero(3)">3</button>
+                            <button class="btn btn-secondary" onclick="adicionarOperador('*')">*</button>
+                            <button class="btn btn-secondary" onclick="adicionarNumero(0)">0</button>
+                            <button class="btn btn-secondary" onclick="adicionarOperador('/')">/</button>
+                            <button class="btn btn-primary" onclick="calcularResultado()">=</button>
+                        </div>
+                        <h5>Histórico</h5>
+                        <ul id="historico" class="list-group"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.querySelector('.btn-link-pag2').addEventListener('click', function() {
+            window.location.href = 'pag2.html';
+        });
+    </script>
+</body>
+</html>

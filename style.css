@@ -1,0 +1,68 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header nav {
+    margin-bottom: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.calculator {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #b3b3b3;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.calculator button {
+    width: 30%;
+    height: 48px;
+    margin: 5px 0;
+    font-size: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+#historico {
+    max-height: 200px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
